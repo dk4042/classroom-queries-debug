@@ -58,26 +58,26 @@
     </th>
   </tr>
 
-  <% @students.eac do |student| %>
+  <% @students.each do |student| %>
     <tr>
       <td>
-        <%= student.id %>
+        <%= a_student.id %>
       </td>
 
       <td>
-        <%= student.first_name %>
+        <%= a_student.name %>
       </td>
 
       <td>
-        <%= student.last_name %>
+        <%= a_student.last_name %>
       </td>
 
       <td>
-        <%= student.email %>
+        <%= a_student.email %>
       </td>
 
       <td>
-        <a href="/students/<%= student %>">
+        <a href="/students/<%= a_student %>">
           Show details
         </a>
       </td>
